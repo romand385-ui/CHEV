@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oswaldo Román Chevrolet San Cristóbal</title>
+  <title>Oswaldo Román Chevrolet</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -15,29 +15,43 @@
       color: #fff;
     }
 
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: #000;
+      position: sticky;
+      top: 0;
+    }
+
+    nav img {
+      width: 100px;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
     header {
       text-align: center;
-      padding: 100px 20px 60px;
+      padding: 100px 20px;
       background: linear-gradient(to bottom, #000, #0a0a0a);
     }
 
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      color: #aaa;
     }
 
     .btn {
-      display: inline-block;
       padding: 14px 24px;
-      margin: 10px;
       border-radius: 30px;
       text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
+      margin: 10px;
+      display: inline-block;
     }
 
     .whatsapp {
@@ -45,38 +59,24 @@
       color: #fff;
     }
 
-    .whatsapp:hover {
-      background: #1ebe5d;
-      transform: scale(1.05);
+    .section {
+      padding: 40px 20px;
     }
 
-    .outline {
-      border: 1px solid #444;
-      color: #fff;
-    }
-
-    .outline:hover {
-      background: #fff;
-      color: #000;
+    .section h2 {
+      margin-bottom: 20px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 25px;
-      padding: 40px;
+      gap: 20px;
     }
 
     .card {
       background: #111;
-      border-radius: 20px;
+      border-radius: 15px;
       overflow: hidden;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     .card img {
@@ -86,21 +86,22 @@
     }
 
     .card-content {
-      padding: 20px;
+      padding: 15px;
     }
 
-    .card h3 {
-      margin: 0 0 5px;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      margin-bottom: 15px;
+    .tag {
+      background: gold;
+      color: #000;
+      padding: 3px 8px;
+      font-size: 12px;
+      border-radius: 6px;
+      display: inline-block;
+      margin-bottom: 5px;
     }
 
     footer {
       text-align: center;
-      padding: 30px;
+      padding: 20px;
       border-top: 1px solid #222;
       color: #777;
     }
@@ -110,97 +111,121 @@
       bottom: 20px;
       right: 20px;
       background: #25D366;
-      padding: 16px;
+      padding: 15px;
       border-radius: 50%;
-      font-size: 20px;
-      text-decoration: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 
 <body>
 
+<!-- NAV -->
+<nav>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Chevrolet_logo.png">
+  <div>
+    <a href="#">Inicio</a>
+    <a href="#">Modelos</a>
+    <a href="#">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
 <header>
   <h1>Estrena tu Chevrolet</h1>
-  <p>Atención directa en San Cristóbal | Crédito y entrega inmediata</p>
+  <p>Entrega inmediata en San Cristóbal</p>
 
-  <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20información" target="_blank">
-    Cotizar ahora
-  </a>
-
-  <a class="btn outline" href="https://www.instagram.com/dhnielroman/" target="_blank">
-    Instagram
-  </a>
-
-  <a class="btn outline" href="https://www.facebook.com/profile.php?id=61571623687627" target="_blank">
-    Facebook
+  <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20información">
+    Cotizar por WhatsApp
   </a>
 </header>
 
-<section class="grid">
+<!-- AUTOS DE ENTRADA -->
+<section class="section">
+  <h2>Autos</h2>
+  <div class="grid">
 
-  <div class="card">
-    <img src="aveo.jpg" alt="aveo.jpg">
-    <div class="card-content">
-      <h3>Aveo 2026</h3>
-      <p>Económico y accesible</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20Aveo%202026">Cotizar</a>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <span class="tag">Más vendido</span>
+        <h3>Onix 2026</h3>
+        <p>Gran rendimiento y tecnología</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Onix">Cotizar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x200" alt="">
-    <div class="card-content">
-      <h3>Onix 2026</h3>
-      <p>El más vendido en México</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20Onix%202026">Cotizar</a>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <h3>Aveo 2026</h3>
+        <p>Económico y confiable</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Aveo">Cotizar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x200" alt="">
-    <div class="card-content">
-      <h3>Tracker 2026</h3>
-      <p>SUV moderna y equipada</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20Tracker%202026">Cotizar</a>
+  </div>
+</section>
+
+<!-- SUV -->
+<section class="section">
+  <h2>SUV</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <span class="tag">Nuevo</span>
+        <h3>Trax 2026</h3>
+        <p>Diseño moderno</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Trax">Cotizar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x200" alt="">
-    <div class="card-content">
-      <h3>Captiva 2026</h3>
-      <p>Espacio y comodidad familiar</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20Captiva%202026">Cotizar</a>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <h3>Tracker 2026</h3>
+        <p>SUV equipada</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Tracker">Cotizar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x200" alt="">
-    <div class="card-content">
-      <h3>Groove 2026</h3>
-      <p>Diseño juvenil y moderno</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20Groove%202026">Cotizar</a>
+  </div>
+</section>
+
+<!-- PICKUPS -->
+<section class="section">
+  <h2>Pickups</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <span class="tag">Trabajo</span>
+        <h3>Tornado 2026</h3>
+        <p>Ideal para negocio</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Tornado">Cotizar</a>
+      </div>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://via.placeholder.com/400x200" alt="">
-    <div class="card-content">
-      <h3>S10 2026</h3>
-      <p>Pickup potente y resistente</p>
-      <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Hola,%20quiero%20cotizar%20S10%202026">Cotizar</a>
+    <div class="card">
+      <img src="https://via.placeholder.com/400x200">
+      <div class="card-content">
+        <span class="tag">Premium</span>
+        <h3>Cheyenne 2026</h3>
+        <p>Lujo y potencia</p>
+        <a class="btn whatsapp" href="https://wa.me/5219671385373?text=Cheyenne">Cotizar</a>
+      </div>
     </div>
-  </div>
 
+  </div>
 </section>
 
 <footer>
   © 2026 Oswaldo Román Chevrolet San Cristóbal
 </footer>
 
-<a class="floating" href="https://wa.me/5219671385373" target="_blank">💬</a>
+<a class="floating" href="https://wa.me/5219671385373">💬</a>
 
 </body>
 </html>
